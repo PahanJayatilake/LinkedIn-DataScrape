@@ -60,9 +60,7 @@
         browser.login_linkedin(username='chensawman598@gmail.com',password='DenjixPochita9876')
          time.sleep(10)
 
-    browser.type_linkedin_searchbar(title='NanoEngineering')
-    time.sleep(5)
+         browser.type_linkedin_searchbar(title='NanoEngineering')
+          time.sleep(5)
 
-
-
-    browser.close_browser()
+         browser.close_browser()
