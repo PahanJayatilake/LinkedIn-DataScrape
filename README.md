@@ -1,21 +1,21 @@
 # LinkedIn-DataScrape
 
-#Import Packages
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from bs4 import BeautifulSoup
+        #Import Packages
+        from selenium import webdriver
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.chrome.service import Service
+        from bs4 import BeautifulSoup
 
-from selenium.webdriver.chrome.options import Options
-chrome_options = Options()
-chrome_options.add_experimental_option("detach", True)
+        from selenium.webdriver.chrome.options import Options
+        chrome_options = Options()
+        chrome_options.add_experimental_option("detach", True)
 
-import time
-#import pandas as pd
-import json
+        import time
+        #import pandas as pd
+        import json
 
-class Browser:
-        browser, service = None, None
+        class Browser:
+                 browser, service = None, None
 
         def __init__(self, driver: str):
             self.service = Service(driver)
@@ -51,8 +51,8 @@ class Browser:
             time.sleep(5)
 
 
-if __name__ == '__main__':
-    browser = Browser('C:/Users:/Users/pahan/chromedriver.exe')
+        if __name__ == '__main__':
+                browser = Browser('C:/Users:/Users/pahan/chromedriver.exe')
 
     browser.open_page('https://www.linkedin.com')
     time.sleep(3)
