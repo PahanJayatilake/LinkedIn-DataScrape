@@ -54,11 +54,11 @@
         if __name__ == '__main__':
                 browser = Browser('C:/Users:/Users/pahan/chromedriver.exe')
 
-    browser.open_page('https://www.linkedin.com')
-    time.sleep(3)
+         browser.open_page('https://www.linkedin.com')
+          time.sleep(3)
 
-    browser.login_linkedin(username='chensawman598@gmail.com',password='DenjixPochita9876')
-    time.sleep(10)
+        browser.login_linkedin(username='chensawman598@gmail.com',password='DenjixPochita9876')
+         time.sleep(10)
 
     browser.type_linkedin_searchbar(title='NanoEngineering')
     time.sleep(5)
