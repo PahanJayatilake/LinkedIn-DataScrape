@@ -9,8 +9,7 @@ For this code to run you will need to download several packages: Selenium and Ch
 
 ## Selenium
 
-> Python >= 3.6 required
-
+To install Selenium use the following command:
  ```bash
    pip install selenium
    ```
