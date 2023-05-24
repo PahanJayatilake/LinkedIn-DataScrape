@@ -11,6 +11,7 @@ For this code to run you will need to download several packages: Selenium and Ch
 
 > Python >= 3.6 required
 
-'''bash
-python -m pip install selenium
-'''
+ ```bash
+   pipenv install --dev
+   pipenv shell
+   ```
