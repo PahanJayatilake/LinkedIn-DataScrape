@@ -2,7 +2,7 @@
 Gather and organize employment history of NanoEngineering alumni after graduation by scraping data from LinkedIn to create a comprehensive database of potential sponsors for the upcoming school year. 
 
 # Message for the Hiring Manager
-This project is still in a very early stage and is not near finalization yet. Currently, I have managed to successfully log into LinkedIn automatically and type "NanoEngineering" in the search bar. Additionally, I have not utilized Python for a long 
+This project is still in a very early stage and is not near finalization yet. Currently, I have managed to successfully log into LinkedIn automatically and type "NanoEngineering" in the search bar. Additionally, I have not utilized Python for a long duration of time so this is a project to help me review while allowing me to learn a new skill.
 
 
 # Warning
