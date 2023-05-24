@@ -8,6 +8,9 @@ Data scraping is not supported by LinkedIn. Running this procedure might violate
 For this code to run you will need to download several packages: Selenium and Chrome Webdriver 
 
 ## Selenium
+
+> Python >= 3.6 required
+
 '''bash
 python -m pip install selenium
 '''
