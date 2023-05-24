@@ -1,71 +1,66 @@
-# LinkedIn-DataScrape
+#Import Packages
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from bs4 import BeautifulSoup
 
-        #Import Packages
-        from selenium import webdriver
-        from selenium.webdriver.common.by import By
-        from selenium.webdriver.chrome.service import Service
-        from bs4 import BeautifulSoup
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_experimental_option("detach", True)
 
-        from selenium.webdriver.chrome.options import Options
-        chrome_options = Options()
-        chrome_options.add_experimental_option("detach", True)
+import time
+#import pandas as pd
+import json
 
-        import time
-        import json
+class Browser:
+        browser, service = None, None
 
-        class Browser:
-                 browser, service = None, None
+# Initialise the webdriver with the path to chromedriver.exe
 
-        # Initialise the webdriver with the path to chromedriver.exe
+        def __init__(self, driver: str):
+            self.service = Service(driver)
+            self.browser = webdriver.Chrome(service=self.service)
 
-                def __init__(self, driver: str):
-                    self.service = Service(driver)
-                    self.browser = webdriver.Chrome(service=self.service)
+        def open_page(self, url: str):
+            self.browser.get(url)
 
-                def open_page(self, url: str):
-                    self.browser.get(url)
-
-                def close_browser(self):
-                    self.browser.close()
-
-
-                def add_input(self, by: By, value: str, text: str):
-                    field = self.browser.find_element(by=by, value=value)
-                    field.send_keys(text)
-                    time.sleep(1)
-
-                def click_button(self, by: By, value: str):
-                    button = self.browser.find_element(by=by, value=value)
-                    button.click()
-                    time.sleep(1)
+        def close_browser(self):
+            self.browser.close()
 
 
-                def login_linkedin(self, username: str, password: str):
-                    self.add_input(by=By.ID, value= 'session_key', text=username)
-                    self.add_input(by=By.ID, value= 'session_password', text=password)
-                    self.click_button(by=By.XPATH, value="//button[normalize-space()='Sign in']")
-                    time.sleep(3)
+        def add_input(self, by: By, value: str, text: str):
+            field = self.browser.find_element(by=by, value=value)
+            field.send_keys(text)
+            time.sleep(1)
+
+        def click_button(self, by: By, value: str):
+            button = self.browser.find_element(by=by, value=value)
+            button.click()
+            time.sleep(1)
 
 
-                def type_linkedin_searchbar(self, title: str):
-                    self.add_input(by=By.XPATH, value="//input[@placeholder='Search']", text=title)
-                    time.sleep(5)
+        def login_linkedin(self, username: str, password: str):
+            self.add_input(by=By.ID, value= 'session_key', text=username)
+            self.add_input(by=By.ID, value= 'session_password', text=password)
+            self.click_button(by=By.XPATH, value="//button[normalize-space()='Sign in']")
+            time.sleep(5)
 
 
-        if __name__ == '__main__':
-                browser = Browser('C:/Users:/Users/pahan/chromedriver.exe')
+        def type_linkedin_searchbar(self, title: str):
+            self.add_input(by=By.XPATH, value="//input[@placeholder='Search']", text=title)
+            time.sleep(3)
 
-        # Remember the Chrome WebDriver that you downloaded earlier. Find the location of the file, determines it's path and enter it in 'Your_ChromeDriver_Path'
-        
-                browser.open_page('Your_ChromeDriver_Path')
-                time.sleep(3)
+# Remember the Chrome WebDriver that you downloaded earlier. Find the location of the file, determines it's path and enter it in 'Your_ChromeDriver_Path'
+if __name__ == '__main__':
+    browser = Browser('C:/Users:/Users/pahan/chromedriver.exe')
 
-        # For the automatic login to work you will need to write down your username and password below. In 'Your_username' write your username. Do the same with your password. 
-                browser.login_linkedin(username='Your_username',password='Your_password')
-                time.sleep(10)
+    browser.open_page('https://www.linkedin.com')
+    time.sleep(5)
+    
+# For the automatic login to work you will need to write down your username and password below. In 'Your_username' write your username. Do the same with your password.
+    browser.login_linkedin(username='chensawman598@gmail.com',password='DenjixPochita9876')
+    time.sleep(15)
 
-        # In Search_Title write what you would like to appear in the search bar
-                browser.type_linkedin_searchbar(title='Search_Title')
-                time.sleep(5)
-
-                browser.close_browser()
+ # In Search_Title write what you would like to appear in the search bar
+    browser.type_linkedin_searchbar(title='NanoEngineering')
+    time.sleep(5)
