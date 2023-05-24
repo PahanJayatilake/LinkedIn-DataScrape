@@ -2,7 +2,7 @@
 Gather and organize employment history of NanoEngineering alumni after graduation by scraping data from LinkedIn to create a comprehensive database of potential sponsors for the upcoming school year. 
 
 # Warning
-Data scraping is not supported by LinkedIn. Running this procedure might violate LinkedIn's term of use. So run this program at your own risk. It is reccomended you make an alternate account to avoid the chance of getting banned.
+Data scraping is not supported by LinkedIn. Running this procedure might violate LinkedIn's term of use. So run this program at your own risk. It is reccomended you make an alternate account to avoid the chance of getting banned. This experiment is done only for learning purposes.
 
 # Installation
 For this code to run you will need to download several packages: Selenium, Chrome Webdriver, and BeautifulSoup 4
