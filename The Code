@@ -52,15 +52,15 @@ class Browser:
 
 # Remember the Chrome WebDriver that you downloaded earlier. Find the location of the file, determines it's path and enter it in 'Your_ChromeDriver_Path'
 if __name__ == '__main__':
-    browser = Browser('C:/Users:/Users/pahan/chromedriver.exe')
+    browser = Browser('Your_ChromeDriver')
 
     browser.open_page('https://www.linkedin.com')
     time.sleep(5)
-    
+
 # For the automatic login to work you will need to write down your username and password below. In 'Your_username' write your username. Do the same with your password.
-    browser.login_linkedin(username='chensawman598@gmail.com',password='DenjixPochita9876')
+    browser.login_linkedin(username='Your_username',password='Your_password')
     time.sleep(15)
 
  # In Search_Title write what you would like to appear in the search bar
-    browser.type_linkedin_searchbar(title='NanoEngineering')
+    browser.type_linkedin_searchbar(title='Search_Title')
     time.sleep(5)
