@@ -5,7 +5,7 @@ Scrape the LinkedIn profiles of NanoEngineering alumni to gather data regarding 
 Data scraping is not supported by LinkedIn. Running this procedure might violate LinkedIn's term of use. So run this program at your own risk. It is reccomended you make an alternate account to avoid the chance of getting banned.
 
 # Installation
-For this code to run you will need to download several packages
+For this code to run you will need to download several packages: Selenium and Chrome Webdriver 
 
 # Selenium
-python -m pip install selenium
+/python -m pip install selenium/
