@@ -13,7 +13,13 @@ To install Selenium use the following command:
  ```bash
    pip install selenium
    ```
-## Chrome Web Driver
- ```
+## Chrome WebDriver
+Before installing Chrome WebDriver you have to check the current version of your Chrome web browser.
+1. Press the button with three circle's on the top right and press settings on the dropdown menu
+2. Click on "About Chrome" it's located at the bottom of the task bar
+3. Check your Chrome version and take note of it
+4. Search chrome web driver on google or copy this link
+```
  https://chromedriver.chromium.org/downloads
    ```
+5. Download a Driver with the similar chrome version as yours
