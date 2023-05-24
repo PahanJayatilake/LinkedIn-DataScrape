@@ -22,4 +22,4 @@ Before installing Chrome WebDriver you have to check the current version of your
 ```
  https://chromedriver.chromium.org/downloads
    ```
-5. Download a Driver with the similar chrome version as yours
+5. Download a Driver with the similar chrome version as yours and place it in an easy find to location
