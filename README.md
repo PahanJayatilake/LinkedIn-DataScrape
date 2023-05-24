@@ -14,3 +14,4 @@ For this code to run you will need to download several packages: Selenium and Ch
  ```bash
    pip install selenium
    ```
+## Chrome Web Driver
