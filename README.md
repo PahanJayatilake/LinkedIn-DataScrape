@@ -8,7 +8,7 @@ This project is still in a very early stage and is not near finalization yet. Cu
 Data scraping is not supported by LinkedIn. Running this procedure might violate LinkedIn's term of use. So run this program at your own risk. It is reccomended to make an alternate account to avoid the chance of getting banned. This experiment is done only for learning purposes.
 
 # Installation & Running the Code
-For this code to run you will need to download several packages: Selenium, Chrome Webdriver, and BeautifulSoup 4. Additionally, I utilized PyCharm to write this code so maybe it will probe helpful if you try to run my code. Finally, make sure to past the code as plain text to ensure it will be pasted in the current format.
+For this code to run you will need to download several packages: Selenium, Chrome Webdriver, and BeautifulSoup 4. Additionally, I utilized PyCharm to write this code so maybe it will prove helpful if you utilize it as well. Finally, make sure to past the code as plain text to ensure it will be pasted in the current format.
 
 ## Selenium
 
